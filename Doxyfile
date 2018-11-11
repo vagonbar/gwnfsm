@@ -773,6 +773,7 @@ WARN_LOGFILE           =
 
 INPUT                  =
 #INPUT += GWNFSM.md
+#USE_MDFILE_AS_MAINPAGE = README.md
 USE_MDFILE_AS_MAINPAGE = GWNFSM.md
 
 # This tag can be used to specify the character encoding of the source files

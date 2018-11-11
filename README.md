@@ -62,13 +62,15 @@ The FSM machine describes states as text, symbols as characters, actions and con
 
 When running the test, the following menu should appear:
 
->=== GWN FSM test menu.
->  1. FSM state and transitions.
->  2. Interactive testing, one character.
->  3. Chain testing, a string of characters.
->  4. Full graph, travel all transitions.
->  0. Quit.
->   Choose option: 
+```
+=== GWN FSM test menu.
+  1. FSM state and transitions.
+  2. Interactive testing, one character.
+  3. Chain testing, a string of characters.
+  4. Full graph, travel all transitions.
+  0. Quit.
+   Choose option: 
+```
 
 Option 4 inserts a series of symbols which travel all transitions in the example FSM defined. For the given example, an output similar to the following is expected:
 
