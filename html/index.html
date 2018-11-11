@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>GWN FSM: GWN FSM, an Extended Finite State Machine.</title>
+<title>GWN FSM: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,30 +77,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>, an Extended Finite State Machine. </div>  </div>
+<div class="title">GWN FSM Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This project implements an <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> usable for any purpose. </p><dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone. </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>13th Nov 2018</dd></dl>
-<p>This module implements a Finite State Machine (<a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>) engine. In addition to the usual states and transitions, the GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> includes actions, conditions, and memory.</p>
-<p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> is defined by transitions. For an input symbol, according to the current state in which the machine is, if there is a transition for the pair (symbol, current state), the condition is evaluated, and if found true, the action is executed and the next state is made the current state (the machine is moved to the next state).</p>
-<p>An action is a user written function executed on a transition, before moving the machine to the next state. The action function, as well as the transition, are only executed if the condition function for the transition is true.</p>
-<p>A condition is a user written function which returns true or false when executed or evaluated. The action function and the transition are only executed if the condition evaluates to true. If the condition evaluates to false, the transition is not performed, and its related action is not executed. The use of action functions is optional, since actions can be coded in condition functions. In this case, care must be taken in returning false before the actions are executed, to ensure the actions will only be executed if the condition evaluates to true.</p>
-<p>Memory is implemented as a stack and is accessed as a LIFO (Last In First Out) container. A type definition describes the type of data stored in the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> memory. By changing the data type definition, different types of data may be stored. Memory functions in the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> machine allow to insert an element (push), get the top element (top), delete top element (pop), determine size of the stack, and if it is empty.</p>
-<p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> is implemented as a table of transitions. For a given input symbol and according to the current state the machine is in, the process() method searches the table for a transition corresponding to the pair (input symbol, current state). If one or more transitions are found, the condition functions are evaluated. The first transition where the condition is true is executed, which means the action is executed and the next state is made the current state (the machine is moved to the next state). If no transitions are found or no conditions are true on the found transitions, nothing happens; the action is not excecuted, and the current state is not changed.</p>
-<p>The table of transitions defines the following associations: </p><pre class="fragment">    (input_symbol, current_state) --&gt; (action, next_state, condition)
-</pre><p>where action is a function, symbols and states are strings, and condition is a function which returns a boolean. This table is created through the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> methods add_transition().</p>
-<p>A transition with the null string as an input_symbol ('') stands for a transition valid for any input symbol. For the current state, if the condition is true, the transition will be executed on receiving any symbol.</p>
-<p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> accepts one default transition not associated with any specific input symbol or state, i.e. valid for any input symbol and any current state. The default transition may be used as a catch-all transition. The default transition is set by insertin a transition with null strings as input symbol and current state, i.e. a pair ("", ""). There should be only one default transition; if there are several, the first one found will be executed.</p>
-<p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> machine operates in the following way. On receiving a symbol,</p><ol type="1">
-<li>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> searches the transition table for a key (input symbol, current state). If one or more transitions are found, the condition is evaluated for each transition in order. The first transition on which condition is true is executed.</li>
-<li>If no conditions in any of the found transitions are true, or no transitions were found, the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> searches the transition table for a key ("", current state), which stands for a transition valid for any input symbol. If one or more are found, their conditions are evaluated, and the first condition which returns true is executed.</li>
-<li>If no transitions with true conditions were found so far, the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> searches for a default transition and executes it if one is found.</li>
-<li>If no valid transition was found, i.e. no default transition exists, the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> will raise an exception.</li>
-</ol>
-<p>The action functions and the condition functions receive a reference to the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> object as a parameter, hence the action function has access to all attributes in the <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>, such as current state, input symbol or memory.</p>
-<p>The GWN Finite State Machine implementation is an extension of Noah Spurrier's <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> 20020822, C{<a href="http://www.noah.org/python/FSM/">http://www.noah.org/python/FSM/</a>}. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
