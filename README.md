@@ -1,6 +1,6 @@
 # GWN FSM : an Extended Finite Sate Machine (FSM)
 
-This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio!] (https://www.gnuradio.org/) .
+This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio](https://www.gnuradio.org/) .
 
 Is is still in progress.
 
@@ -21,7 +21,7 @@ The new FSM may be tested by adapting the test file provided.
 
 ## Installation, building and testing
 
-The following steps show how to build the project and run a test on the [example FSM!] (https://github.com/vagonbar/gwnfsm/blob/master/gwnfsm_test.png) provided:
+The following steps show how to build the project and run a test on the [example FSM](https://github.com/vagonbar/gwnfsm/blob/master/gwnfsm_test.png) provided:
 
 1. Clone the project:
 ```
