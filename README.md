@@ -1,8 +1,12 @@
 # GWN FSM : an Extended Finite Sate Machine (FSM)
 
-This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio](https://www.gnuradio.org/) .
+This project implements an Extended Finite State Machine which can be easily adapted to different purposes. Besides usual states and transitiones, the extended FSM accepts:
 
-It is still in progress.
+    actions: a function executed before changing state.
+    conditions: only if the condition is true, the action and the change of state occur.
+    memory: a LIFO stack of strings; may be easily changed to another data type by changin the typedef of the elements of the stack.
+
+The GWN FSM is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio](https://www.gnuradio.org/) .
 
 
 ## Contents
@@ -21,8 +25,10 @@ The FSM initialization files define the FSM desired: its transitions, action fun
 
 The new FSM may be tested by adapting the test file provided. 
 
+After installation, Doxygen documentation can be found by opening `html/index.html` in a browser.
 
-## Installation, building and testing
+
+## Installation and building
 
 The following steps show how to build the project and run a test on the [example FSM](https://github.com/vagonbar/gwnfsm/blob/master/gwnfsm_test.png) provided:
 
@@ -43,9 +49,14 @@ This clones the project in directory `gwnfsm`.
 ```
   ./fsm_test
 ```
-The example FSM diagram:
+
+## Test example
+
+The test provided implements the FSM shown in the diagram.
 
 ![Example FSM](gwnfsm_test.png)
+
+The FSM machine describes states as text, symbols as characters, actions and conditions as functions.
 
 When running the test, the following menu should appear:
 
