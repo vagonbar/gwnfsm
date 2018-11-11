@@ -80,8 +80,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>, an Extended Finite State Machine. </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This project implements an <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> usable for any purpose. </p><dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2018-11-13</dd></dl>
+<div class="textblock"><p>This project implements an <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> usable for any purpose. </p><dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>13th Nov 2018</dd></dl>
 <p>This module implements a Finite State Machine (<a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>) engine. In addition to the usual states and transitions, the GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> includes actions, conditions, and memory.</p>
 <p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> is defined by transitions. For an input symbol, according to the current state in which the machine is, if there is a transition for the pair (symbol, current state), the condition is evaluated, and if found true, the action is executed and the next state is made the current state (the machine is moved to the next state).</p>
 <p>An action is a user written function executed on a transition, before moving the machine to the next state. The action function, as well as the transition, are only executed if the condition function for the transition is true.</p>

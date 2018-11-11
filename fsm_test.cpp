@@ -1,6 +1,11 @@
-/** GWN FSM test
+/** 
+ * \brief GWN FSM run test.
  *
- * GWN Finite State Machine test.
+ * @file fsm_test.cpp
+ * @author Victor Gonzalez-Barbone.
+ * @date 13th Nov 2018. 
+ *
+GWN Finite State Machine test.
  */
 
 #include "fsm_init.h"

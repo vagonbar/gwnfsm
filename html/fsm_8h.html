@@ -102,15 +102,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Include dependency graph for fsm.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="fsm_8h__incl.png" border="0" usemap="#fsm_8h" alt=""/></div>
-<map name="fsm_8h" id="fsm_8h">
-</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="fsm_8h__dep__incl.png" border="0" usemap="#fsm_8hdep" alt=""/></div>
 <map name="fsm_8hdep" id="fsm_8hdep">
-<area shape="rect" id="node2" href="fsm__init_8h_source.html" title="fsm_init.h" alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node2" href="fsm__init_8h.html" title="GWN Finite State Machine initialization for testing. " alt="" coords="15,80,94,107"/>
+<area shape="rect" id="node3" href="fsm__test_8cpp.html" title="GWN FSM run test. " alt="" coords="5,155,104,181"/>
 </map>
 </div>
 </div>
@@ -139,8 +138,8 @@ Typedefs</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>: An Extended Finite State Machine. </p>
-<p>A finite state machine (<a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>). </p><dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>9 Nov 2018.</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>13th Nov 2018.</dd></dl>
 <p>This module implements a Finite State Machine (<a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a>) engine. In addition to the usual states and transitions, the GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> includes actions, conditions, and memory.</p>
 <p>The <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> is defined by transitions. For an input symbol, according to the current state in which the machine is, if there is a transition for the pair (symbol, current state), the condition is evaluated, and if found true, the action is executed and the next state is made the current state (the machine is moved to the next state).</p>
 <p>An action is a user written function executed on a transition, before moving the machine to the next state. The action function, as well as the transition, are only executed if the condition function for the transition is true.</p>

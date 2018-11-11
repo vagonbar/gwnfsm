@@ -1,3 +1,4 @@
 <map id="fsm.h" name="fsm.h">
-<area shape="rect" id="node2" href="$fsm__init_8h_source.html" title="fsm_init.h" alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node2" href="$fsm__init_8h.html" title="GWN Finite State Machine initialization for testing. " alt="" coords="15,80,94,107"/>
+<area shape="rect" id="node3" href="$fsm__test_8cpp.html" title="GWN FSM run test. " alt="" coords="5,155,104,181"/>
 </map>

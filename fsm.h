@@ -1,12 +1,11 @@
 // fsm.h : GWN Finite State Machine
 
 /**
- * \brief GWN FSM: An Extended Finite State Machine
+ * \brief GWN FSM: An Extended Finite State Machine.
  *
  * @file fsm.h
- * @brief A finite state machine (FSM). 
- * @author Victor Gonzalez-Barbone
- * @date 9 Nov 2018. 
+ * @author Victor Gonzalez-Barbone.
+ * @date 13th Nov 2018. 
  *
 This module implements a Finite State Machine (FSM) engine. In addition to the usual states and transitions, the GWN FSM includes actions, conditions, and memory. 
 

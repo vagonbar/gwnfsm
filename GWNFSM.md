@@ -1,8 +1,8 @@
 /** \mainpage GWN FSM, an Extended Finite State Machine.
 
 \brief This project implements an FSM usable for any purpose.
-\author Victor Gonzalez-Barbone
-\date 2018-11-13
+\author Victor Gonzalez-Barbone.
+\date 13th Nov 2018
  
 This module implements a Finite State Machine (FSM) engine. In addition to the usual states and transitions, the GWN FSM includes actions, conditions, and memory. 
 

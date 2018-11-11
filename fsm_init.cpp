@@ -1,7 +1,5 @@
-/** GWN FSM initialize
- *
- * GWN Finite State Machine initializarion for testing.
- */
+// fsm_init.cpp
+
 
 #include "fsm_init.h"
 

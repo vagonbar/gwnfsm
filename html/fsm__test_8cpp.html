@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>GWN FSM: fsm_init.h Source File</title>
+<title>GWN FSM: fsm_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,16 +80,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">fsm_init.h</div>  </div>
+<div class="title">fsm_test.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="fsm__init_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fsm_8h.html">fsm.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="classFSM.html">FSM</a> <a class="code" href="fsm__init_8h.html#abd065e93158e291fde73af197f0ca4b4">make_fsm</a>(); </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fsm__init_8h.html#a84599f34954e390bc1fb70a5fb417cf5">show_add_attrs</a>(<a class="code" href="classFSM.html">FSM</a> &amp;fsm);   <span class="comment">// show additional atributes</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="ttc" id="classFSM_html"><div class="ttname"><a href="classFSM.html">FSM</a></div><div class="ttdoc">GWN Finite State Machine (GWN FSM) with string as symbols. </div><div class="ttdef"><b>Definition:</b> fsm.h:92</div></div>
-<div class="ttc" id="fsm__init_8h_html_a84599f34954e390bc1fb70a5fb417cf5"><div class="ttname"><a href="fsm__init_8h.html#a84599f34954e390bc1fb70a5fb417cf5">show_add_attrs</a></div><div class="ttdeci">void show_add_attrs(FSM &amp;fsm)</div><div class="ttdef"><b>Definition:</b> fsm_init.cpp:9</div></div>
-<div class="ttc" id="fsm__init_8h_html_abd065e93158e291fde73af197f0ca4b4"><div class="ttname"><a href="fsm__init_8h.html#abd065e93158e291fde73af197f0ca4b4">make_fsm</a></div><div class="ttdeci">FSM make_fsm()</div><div class="ttdef"><b>Definition:</b> fsm_init.cpp:127</div></div>
-<div class="ttc" id="fsm_8h_html"><div class="ttname"><a href="fsm_8h.html">fsm.h</a></div><div class="ttdoc">GWN FSM: An Extended Finite State Machine. </div></div>
-</div><!-- fragment --></div><!-- contents -->
+
+<p>GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> run test.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="fsm__init_8h_source.html">fsm_init.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for fsm_test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="fsm__test_8cpp__incl.png" border="0" usemap="#fsm__test_8cpp" alt=""/></div>
+<map name="fsm__test_8cpp" id="fsm__test_8cpp">
+<area shape="rect" id="node2" href="fsm__init_8h.html" title="GWN Finite State Machine initialization for testing. " alt="" coords="231,80,310,107"/>
+<area shape="rect" id="node3" href="fsm_8h.html" title="GWN FSM: An Extended Finite State Machine. " alt="" coords="243,155,298,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adf7c3ac791f996a56160a12f379cbd99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf7c3ac791f996a56160a12f379cbd99"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Options</b> { <br />
+&#160;&#160;<b>QUIT</b>, 
+<b>FSM_STATE</b>, 
+<b>INTERACTIVE</b>, 
+<b>SYMBOL_CHAIN</b>, 
+<br />
+&#160;&#160;<b>FULL_GRAPH</b>
+<br />
+ }</td></tr>
+<tr class="separator:adf7c3ac791f996a56160a12f379cbd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>GWN <a class="el" href="classFSM.html" title="GWN Finite State Machine (GWN FSM) with string as symbols. ">FSM</a> run test. </p>
+<dl class="section author"><dt>Author</dt><dd>Victor Gonzalez-Barbone. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>13th Nov 2018.</dd></dl>
+<p>GWN Finite State Machine test. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

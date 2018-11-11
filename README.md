@@ -6,7 +6,7 @@ This project implements an Extended Finite State Machine which can be easily ada
 
 >  conditions: only if the condition is true, the action and the change of state occur.
 
->  memory: a LIFO stack of strings; may be easily changed to another data type by changin the typedef of the elements of the stack.
+>  memory: a LIFO stack of strings; may be easily changed to another data type by changing the typedef of the elements of the stack.
 
 The GWN FSM is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio](https://www.gnuradio.org/) .
 
