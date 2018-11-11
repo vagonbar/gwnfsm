@@ -2,7 +2,7 @@
 
 This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio](https://www.gnuradio.org/) .
 
-Is is still in progress.
+It is still in progress.
 
 
 ## Contents
