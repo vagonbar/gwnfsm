@@ -40,8 +40,11 @@ This clones the project in directory `gwnfsm`.
 ```
   ./fsm_test
 ```
+The example FSM diagram:
 
-When running the test, the following manu should appear:
+![Example FSM](gwnfsm_test.png)
+
+When running the test, the following menu should appear:
 
 >=== GWN FSM test menu.
 >  1. FSM state and transitions.
