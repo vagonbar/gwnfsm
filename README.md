@@ -9,11 +9,11 @@ It is still in progress.
 
 The essential files of the project are:
 
-    `fsm.h, fsm.cpp` : the FSM core.
+   `fsm.h, fsm.cpp` : the FSM core.
 
-    `fsm_init.h, fsm_init.cpp` : definitions for a particular FSM.
+   `fsm_init.h, fsm_init.cpp` : definitions for a particular FSM.
 
-    `fsm_test.cpp` : to test the FSM defined.
+   `fsm_test.cpp` : to test the FSM defined.
 
 The FSM core files need only be touched to add attributes specific to the FSM desired; sections to add attributes and setter, getter functions are indicated as comments in the code.
 
