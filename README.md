@@ -1,6 +1,6 @@
 # GWN FSM : an Extended Finite Sate Machine (FSM)
 
-This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio] (https://www.gnuradio.org/) .
+This repository contains code usable to implement an Extended Finite State Machine. It is part of the GNU Wireless Network (GWN) project, which intends to provide support for data communications using [GNU Radio!] (https://www.gnuradio.org/) .
 
 Is is still in progress.
 
@@ -21,25 +21,25 @@ The new FSM may be tested by adapting the test file provided.
 
 ## Installation, building and testing
 
-The following steps show how to build the project and run a test on the [example FSM] (https://github.com/vagonbar/gwnfsm/blob/master/gwnfsm_test.png) provided:
+The following steps show how to build the project and run a test on the [example FSM!] (https://github.com/vagonbar/gwnfsm/blob/master/gwnfsm_test.png) provided:
 
 1. Clone the project:
-'''
+```
   git clone http://github.com/vagonbar/gwnfsm
-'''
+```
 This clones the project in directory gwnfsm.
 
 2. Build using CMake:
-'''
+```
   cd gwnfsm
   cmake .
   make
-'''
+```
 
 3. Run the test:
-'''
+```
   ./fsm_test
-'''
+```
 
 When running the test, the following manu should appear:
 
@@ -53,7 +53,7 @@ When running the test, the following manu should appear:
 
 Option 4 inserts a series of symbols which travel all transitions in the example FSM defined. For the given example, an output similar to the following is expected:
 
-'''
+```
    Choose option: 4
 
   Full graph testing: gxyrwrgrwrcrgrxys
@@ -164,7 +164,7 @@ Input symbol s:
   Executed (symbol, state) transition
   --- FSM show_add_attrs; fsm.where=C, fsm.to_c=1
 Input symbol :
-'''
+```
 
 
 
