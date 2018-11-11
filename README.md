@@ -27,7 +27,7 @@ The following steps show how to build the project and run a test on the [example
 ```
   git clone http://github.com/vagonbar/gwnfsm
 ```
-This clones the project in directory gwnfsm.
+This clones the project in directory `gwnfsm`.
 
 2. Build using CMake:
 ```
